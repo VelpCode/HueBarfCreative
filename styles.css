@@ -1,0 +1,49 @@
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container {
+
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.header {
+    margin-right: 60vh;
+}
+
+.title {
+
+    font-size: 60px;
+    
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.barfie {
+
+    height: 60vh;
+}
+
+.divbox {
+    display: flex;
+}
+
+.boxcontainer {
+    display: flex;
+    gap: 20rem;
+}
+
+.box-one {
+
+    
+
+
+}
