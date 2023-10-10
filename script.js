@@ -1,5 +1,14 @@
 const container = document.querySelector('.container')
 
+const randomizeColor = document.querySelector('.btnBoom')
+
+
+randomizeColor.addEventListener("click", () => {
+    console.log("wagwan");
+})
+
+
+
 const cardAmount = 3;
 let bool = true;
 
