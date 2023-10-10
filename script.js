@@ -69,8 +69,7 @@ container.innerHTML = `
 
     </nav>
 
-    <div class="container">
-
+    <div class="card">
         <div class="header">
             <h1 class = 'title'>Hue Barf.</h1>
             <h3 class = 'heading'>A gradient collection designed for you.</h3>
