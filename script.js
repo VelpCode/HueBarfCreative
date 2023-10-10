@@ -2,9 +2,18 @@ const container = document.querySelector('.container')
 
 const randomizeColor = document.querySelector('.btnBoom')
 
+const colorCard = document.querySelector('.box-one')
+
+function getRandomGradient() {
+    const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
+    const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
+    return `linear-gradient(90deg, ${randomColor1}, ${randomColor2})`;
+}
+
 
 randomizeColor.addEventListener("click", () => {
-    console.log("wagwan");
+    const boxOne = document.querySelector(".box-one");
+    boxOne.style.background = getRandomGradient();
 })
 
 
