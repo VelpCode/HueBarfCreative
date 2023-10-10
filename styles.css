@@ -106,3 +106,17 @@
     color: black;
 }
 
+.bada {
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the square container */
+    box-sizing: border-box; /* Include padding and border within the container */
+    text-align: center;
+    background-color: #F6F5F6;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+
+}
+
+.bada:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+
+}
