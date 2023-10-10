@@ -52,19 +52,19 @@
 
     height: 15em;
     width: 15rem;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 5px 5px;
     cursor: pointer;
 
 }
 
-.box-text {
-    font-weight: bold;
-    align-items: center;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 2);
-    height: 10rem;
-    width: 15rem;
+.tdot {
+
+    height: 50px;
+    width: 50px;
+    display: block;
+
 }
+
 
 .box-one {
     background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
