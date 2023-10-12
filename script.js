@@ -15,7 +15,7 @@ function getRandomGradient() {
 function getRandomGradientTwo() {
 
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
-    const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
+    const randomColor2 = '#' + Math.floor(Math.random()*10000000).toString(16);
     const randomColor3 = '#' + Math.floor(Math.random()*16777215).toString(16);
     return `linear-gradient(190deg, ${randomColor1}, ${randomColor2}, ${randomColor3})`;
 
@@ -26,10 +26,9 @@ function getRandomGradientThree() {
 
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
-    const randomColor3 = '#' + Math.floor(Math.random()*16777215).toString(16);
-    const randomColor4 = '#' + Math.floor(Math.random()*16777215).toString(16);
+    const randomColor3 = '#' + Math.floor(Math.random()*12311243).toString(16);
 
-    return `linear-gradient(20deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
+    return `linear-gradient(20deg, ${randomColor1}, ${randomColor2}, ${randomColor3})`;
     
 
 }
@@ -53,21 +52,21 @@ document.getElementById("randomBtnThree").addEventListener("click", () => {
 })
 
 
-document.getElementById("randomBtnOne").addEventListener("click", () => {
-    const boxOne = document.querySelector(".box-one");
-    boxOne.style.background = getRandomGradient();
+document.getElementById("randomBtnFour").addEventListener("click", () => {
+    const boxFour = document.querySelector(".box-four");
+    boxFour.style.background = getRandomGradient();
 })
 
 
-document.getElementById("randomBtnOne").addEventListener("click", () => {
-    const boxOne = document.querySelector(".box-one");
-    boxOne.style.background = getRandomGradient();
+document.getElementById("randomBtnFive").addEventListener("click", () => {
+    const boxFive = document.querySelector(".box-five");
+    boxFive.style.background = getRandomGradientThree();
 })
 
 
-document.getElementById("randomBtnOne").addEventListener("click", () => {
-    const boxOne = document.querySelector(".box-one");
-    boxOne.style.background = getRandomGradient();
+document.getElementById("randomBtnSix").addEventListener("click", () => {
+    const boxSix = document.querySelector(".box-six");
+    boxSix.style.background = getRandomGradientTwo();
 })
 
 

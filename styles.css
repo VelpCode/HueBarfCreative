@@ -145,9 +145,16 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 
 .subhead {
     font-weight: bolder;
-    margin-bottom: 20px;
-    color: #666666;
+    margin-bottom: 25px;
 }
+
+.phead {
+    text-align: center;
+    color: #666666;
+
+}
+
+
 
 .btnBoom {
 
