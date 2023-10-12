@@ -34,6 +34,8 @@ function getRandomGradientThree() {
 }
 
 
+
+
 document.getElementById("randomBtnOne").addEventListener("click", () => {
     const boxOne = document.querySelector(".box-one");
     boxOne.style.background = getRandomGradient();
