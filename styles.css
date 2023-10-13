@@ -118,16 +118,17 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
     text-align: center;
     line-height: 70px;
     
-
 }
+
 
 .sidebar ul a {
     display: block;
     height: 100%;
     line-height: 65px;
     width: 100%;
-    color: black;
+    color: black; 
 }
+
 
 .bada {
     padding: 30px;
