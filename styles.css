@@ -5,13 +5,17 @@
 
 }
 
+
+
+
 .container {
 
     display: flex;
     padding: 20px;
     align-items: center;
     flex-direction: column;
-    background-color: FEFEFF;
+    background-color: #FEFEFF;
+    
 
 }
 
@@ -152,11 +156,11 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 }
 
 .phead {
+
     text-align: center;
     color: #666666;
 
 }
-
 
 
 .btnBoom {
@@ -168,5 +172,51 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
     font-weight: bolder;
     line-height: 1.2em;
     margin: 5px;
+    border: none;
 
+}
+
+#search-bar {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9px);
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#submit-button {
+    background-color: #222222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+    line-height: 1.2em;
+    margin: 5px;
+    border: none;
+}
+
+.search-container {
+    
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 100;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the square container */
+    box-sizing: border-box; /* Include padding and border within the container */
+    text-align: center;
+    background-color: #F6F5F6;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
 }

@@ -5,6 +5,17 @@ const randomizeColor = document.querySelector('.btnBoom')
 const colorCard = document.querySelector('.box-one')
 
 
+const searchBar = document.getElementById('search-bar');
+const submitButton = document.getElementById('submit-button');
+
+    submitButton.addEventListener('click', updateGradient);
+
+    function updateGradient() {
+        const colors = searchBar.value.split(',').map(color => color.trim());
+        if (colors.length === 2) {
+            document.container.style.background = 'linear-gradient(to right, ${colors[0]}, ${colors[1]})';
+        }
+    }
 
 function getRandomGradient() {
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
@@ -70,7 +81,4 @@ document.getElementById("randomBtnSix").addEventListener("click", () => {
     const boxSix = document.querySelector(".box-six");
     boxSix.style.background = getRandomGradientTwo();
 })
-
-
-
 
