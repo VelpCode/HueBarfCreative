@@ -6,16 +6,22 @@ const colorCard = document.querySelector('.box-one')
 
 
 const searchBar = document.getElementById('search-bar');
+const boxSeven = document.querySelector('.box-seven');
 const submitButton = document.getElementById('submit-button');
 
-    submitButton.addEventListener('click', updateGradient);
+submitButton.addEventListener('click', updateGradient);
 
-    function updateGradient() {
-        const colors = searchBar.value.split(',').map(color => color.trim());
-        if (colors.length === 2) {
-            document.container.style.background = 'linear-gradient(to right, ${colors[0]}, ${colors[1]})';
-        }
+function updateGradient() {
+    const colors = searchBar.value.split(',');
+    if (colors.length === 2) {
+        const color1 = colors[0].trim();
+        const color2 = colors[1].trim();
+        boxSeven.style.background = `linear-gradient(132deg, ${color1} 9%, ${color2} 100%)`;
     }
+}
+
+
+
 
 function getRandomGradient() {
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
