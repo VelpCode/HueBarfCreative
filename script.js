@@ -44,10 +44,8 @@ function getRandomGradientThree() {
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor3 = '#' + Math.floor(Math.random()*12311243).toString(16);
-
     return `linear-gradient(20deg, ${randomColor1}, ${randomColor2}, ${randomColor3})`;
     
-
 }
 
 
