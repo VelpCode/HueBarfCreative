@@ -9,6 +9,8 @@ const searchBar = document.getElementById('search-bar');
 const boxSeven = document.querySelector('.box-seven');
 const submitButton = document.getElementById('submit-button');
 
+const copyBtn = document.querySelector(".btnBoom")
+
 submitButton.addEventListener('click', updateGradient);
 
 function updateGradient() {
@@ -19,8 +21,6 @@ function updateGradient() {
         boxSeven.style.background = `linear-gradient(132deg, ${color1} 9%, ${color2} 100%)`;
     }
 }
-
-
 
 
 function getRandomGradient() {
@@ -86,3 +86,12 @@ document.getElementById("randomBtnSix").addEventListener("click", () => {
     boxSix.style.background = getRandomGradientTwo();
 })
 
+const copyCode = () => {
+    navigator.clipboard.writeText(textarea.value);
+    copyBtn.innerText = "Code copied!";
+    setTimeout(() => {
+        copyBtn.innerText = "Copy Code";
+    }, 1000)
+}
+
+copyBtn.addEventListener("click", copyCode)
