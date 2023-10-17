@@ -10,6 +10,33 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 30%;
+    }
+    /* Add more styles as needed */
+    .bada {
+        margin: 10px;
+    }
+    .barfie {
+        display: block;
+        width: 80%;
+    }
+    
+    .divbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 50%;
+        
+    }
+}
 
 
 .container {
@@ -31,7 +58,7 @@
 
 .title {
 
-    font-size: 60px;
+    font-size: 4vw;
     background-image: linear-gradient(90deg, #FC5C7D,#6A82FB);
     background-repeat: no-repeat;
     background-position: left bottom;

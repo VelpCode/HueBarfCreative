@@ -9,13 +9,6 @@ const searchBar = document.getElementById('search-bar');
 const boxSeven = document.querySelector('.box-seven');
 const submitButton = document.getElementById('submit-button');
 
-document.addEventListener("DOMContentLoaded", () => {
-    const copyButn = document.getElementById("copyBtn");
-
-    copyButn.addEventListener("click", () => {
-        console.log('clicked');
-    });
-});
 
 submitButton.addEventListener('click', updateGradient);
 
@@ -87,13 +80,5 @@ document.getElementById("randomBtnSix").addEventListener("click", () => {
     const boxSix = document.querySelector(".box-six");
     boxSix.style.background = getRandomGradientTwo();
 })
-
-const copyCode = () => {
-    navigator.clipboard.writeText(textarea.value);
-    copyBtn.innerText = "Code copied!";
-    setTimeout(() => {
-        copyBtn.innerText = "Copy Code";
-    }, 1000)
-}
 
 
