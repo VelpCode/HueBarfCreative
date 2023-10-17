@@ -9,7 +9,13 @@ const searchBar = document.getElementById('search-bar');
 const boxSeven = document.querySelector('.box-seven');
 const submitButton = document.getElementById('submit-button');
 
-const copyBtn = document.querySelector(".btnBoom")
+document.addEventListener("DOMContentLoaded", () => {
+    const copyButn = document.getElementById("copyBtn");
+
+    copyButn.addEventListener("click", () => {
+        console.log('clicked');
+    });
+});
 
 submitButton.addEventListener('click', updateGradient);
 
@@ -30,22 +36,18 @@ function getRandomGradient() {
 }
 
 function getRandomGradientTwo() {
-
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor2 = '#' + Math.floor(Math.random()*10000000).toString(16);
     const randomColor3 = '#' + Math.floor(Math.random()*16777215).toString(16);
     return `linear-gradient(190deg, ${randomColor1}, ${randomColor2}, ${randomColor3})`;
-
 }
 
 
 function getRandomGradientThree() {
-
     const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
     const randomColor3 = '#' + Math.floor(Math.random()*12311243).toString(16);
     return `linear-gradient(20deg, ${randomColor1}, ${randomColor2}, ${randomColor3})`;
-    
 }
 
 
@@ -94,4 +96,4 @@ const copyCode = () => {
     }, 1000)
 }
 
-copyBtn.addEventListener("click", copyCode)
+
