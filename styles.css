@@ -7,7 +7,6 @@
     font-family: 'Basetica', sans-serif;
     text-decoration: none;
     list-style-type: none;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -34,25 +33,21 @@
 
     .sidebar {
         width: 50%;
-        
+
     }
 }
 
 
 .container {
-
     display: flex;
     padding: 20px;
     align-items: center;
     flex-direction: column;
     background-color: #FEFEFF;
-    
-
 }
 
 .header {
     margin-right: 60vh;
-    
 }
 
 
@@ -262,6 +257,11 @@ background-image: linear-gradient(132deg, #000000 50%, #000000 100%);
 
 }
 
+.ladoo {
+    height: 30vh;
+    width: 30vh;
+}
+
 .box-box {
     display: flex;
     flex-direction: column;
@@ -274,5 +274,7 @@ background-image: linear-gradient(132deg, #000000 50%, #000000 100%);
     box-sizing: border-box; /* Include padding and border within the container */
     text-align: center;
     background-color: #F6F5F6;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+
