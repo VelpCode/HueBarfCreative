@@ -23,33 +23,74 @@
     background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 }
 
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
+@media (max-width: 768px) {
+
+    .barf-container {
+        margin-left: 60vh;
+    }
+
     .container {
+        padding: 10px;
+    }
+
+    .barf-container {
+        margin-left: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .header {
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 3vw;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .divbox {
         flex-direction: column;
     }
-    .sidebar {
-        width: 30%;
-    }
-    /* Add more styles as needed */
+
     .bada {
         margin: 10px;
     }
-    .barfie {
-        display: block;
-        width: 80%;
-    }
-    
-    .divbox {
-        flex-direction: column;
-        align-items: center;
+
+    .boxcontainer {
+        gap: 1rem;
     }
 
-    .sidebar {
-        width: 50%;
+    .search-container {
+        margin-top: 2vh;
+    }
 
+    #search-bar, #submit-button, #gangaswati {
+        width: 100%;
     }
 }
+
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5vw;
+    }
+
+    .bitle {
+        font-size: 40px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+}
+
 
 
 .container {
