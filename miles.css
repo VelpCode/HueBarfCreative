@@ -50,6 +50,9 @@
     margin-right: 60vh;
 }
 
+.modal {
+    border: none;
+}
 
 .title {
 

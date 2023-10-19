@@ -82,3 +82,17 @@ document.getElementById("randomBtnSix").addEventListener("click", () => {
 })
 
 
+
+const modal = document.querySelector('.modal')
+const openModal = document.querySelector('.contacts');
+const closeModal = document.querySelector('.close');
+
+openModal.addEventListener('click', () => {
+    
+    modal.showModal();
+
+})
+
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+})
