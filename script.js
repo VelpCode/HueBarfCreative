@@ -83,16 +83,23 @@ document.getElementById("randomBtnSix").addEventListener("click", () => {
 
 
 
-const modal = document.querySelector('.modal')
+const modal = document.getElementById('modal')
 const openModal = document.querySelector('.contacts');
 const closeModal = document.querySelector('.close');
 
 openModal.addEventListener('click', () => {
-    
+    modal.classList.add('.active');
     modal.showModal();
+    
 
 })
 
-closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
-})
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('.active'); // Remove the "active" class to hide the modal when clicked outside
+        modal.close();
+    }
+});
+
+

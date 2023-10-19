@@ -9,11 +9,14 @@
     list-style-type: none;
 }
 
-.modal {
+.modal.active {
     border: none;
     border-radius: 10px;
     display: grid;
+    opacity: 1;
+    transition: opacity 3s;
 }
+
 
 .modal::backdrop {
     opacity: 0.4;
@@ -59,6 +62,10 @@
 
 .header {
     margin-right: 60vh;
+}
+
+.close {
+    opacity: 0;
 }
 
 
